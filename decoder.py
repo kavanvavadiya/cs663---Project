@@ -69,7 +69,6 @@ def decoder(mask_path, masked_image_path, orig_image_path, save_path):
     restored_image.show(title='Restored Image')
 
 # Example usage
-# decoder('data/m_im2.pbm', 'data/res_im2.png', 'data/im2.png', 'data/restored_im2.png')
 decoder('result/m_im1.pbm', 'result/res_im1.jpg', 'data/im1.png', 'result/restored_im1.png')
 decoder('result/m_im2.pbm', 'result/res_im2.jpg', 'data/im2.png', 'result/restored_im2.png')
 decoder('result/m_im3.pbm', 'result/res_im3.jpg', 'data/im3.png', 'result/restored_im3.png')

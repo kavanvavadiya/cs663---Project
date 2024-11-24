@@ -56,13 +56,8 @@ def encoder(image_path, mask_path, masked_image_path):
     plt.title('Result')
     plt.show()
 
-    # Save the mask and result
-    # mask_im = mask_im.astype(np.bool_)  # Convert to logical (boolean)
-    # cv2.imwrite(mask_path, mask_im * 255)  # Save as binary image
-    cv2.imwrite(masked_image_path, res_im)
 
-     # Save the mask using Pillow for .pbm format
-  # Save the mask using Pillow for .pbm format
+    cv2.imwrite(masked_image_path, res_im)
     mask_pbm = (mask_im[:, :, 0] * 255).astype(np.uint8)  # Convert to 2D binary image
     mask_image = Image.fromarray(mask_pbm).convert("1")  # Convert to 1-bit mode for PBM
     mask_image.save(mask_path)
