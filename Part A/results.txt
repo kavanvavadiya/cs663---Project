@@ -1,0 +1,3 @@
+All result images are uploaded in this GitHub repository.
+
+https://github.com/kavanvavadiya/cs663-results
